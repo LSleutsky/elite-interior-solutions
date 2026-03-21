@@ -93,6 +93,7 @@ const CATEGORY_ORDER = ["waterproofing", "mold", "foundation", "remodeling"];
 
 const getAltText = (filename: string): string => {
   const name = filename.replace(/\.[^.]+$/, "").replace(/_[a-zA-Z0-9-]+$/, "");
+
   return capitalizeWords(name.replace(/[-_]/g, " "));
 };
 
@@ -173,9 +174,9 @@ const CategorySection = ({ category, images, meta }: CategorySectionProps) => {
 
 export default function Projects({ loaderData }: Route.ComponentProps) {
   const { categories } = loaderData;
-  const categoryMap = new Map(categories.map((c) => [c.category, c.images]));
+  const categoryMap = new Map(categories.map((category) => [category.category, category.images]));
   const orderedCategories = CATEGORY_ORDER.filter((id) => categoryMap.has(id) && CATEGORY_META[id]);
-  const totalPhotos = categories.reduce((sum, cat) => sum + cat.images.length, 0);
+  const totalPhotos = categories.reduce((sum, category) => sum + category.images.length, 0);
 
   return (
     <article className="mx-auto max-w-6xl pb-24 md:pb-0">
