@@ -167,7 +167,7 @@ if (DEVELOPMENT) {
   app.use("/assets", express.static("build/client/assets", { immutable: true, maxAge: "1y" }));
   app.use(express.static("build/client", { maxAge: "1h" }));
   // SPA fallback - serve index.html for all non-API routes
-  app.use((req, res) => {
+  app.use((_, res) => {
     res.sendFile(path.join(process.cwd(), "build/client/index.html"));
   });
 }
