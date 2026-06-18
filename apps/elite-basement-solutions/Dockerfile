@@ -12,8 +12,8 @@ FROM base AS build
 COPY . .
 RUN pnpm install --frozen-lockfile
 RUN pnpm --filter @elite/basement-solutions build
-# Bundle the app + its workspace deps (prod only) into a self-contained /app
-RUN pnpm --filter @elite/basement-solutions deploy --prod /app
+# Bundle the app and its workspace deps (prod only) into a self-contained /app.
+RUN pnpm --filter @elite/basement-solutions deploy --legacy --prod /app
 
 FROM base AS runtime
 WORKDIR /app
@@ -21,4 +21,4 @@ ENV NODE_ENV=production
 COPY --from=build /app ./
 COPY --from=build /workspace/apps/elite-basement-solutions/build ./build
 EXPOSE 3000
-CMD ["pnpm", "start"]
+CMD ["node", "--import", "tsx", "server.ts"]
