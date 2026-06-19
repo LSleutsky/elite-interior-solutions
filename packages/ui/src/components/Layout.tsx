@@ -2,11 +2,11 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Link, Outlet } from "react-router";
 
-import { SiteConfig } from "../types";
+import { SiteConfig } from "@elite/ui/types";
 
-import CommandPalette from "./CommandPalette";
-import Logo from "./Logo";
-import ThemeToggle from "./ThemeToggle";
+import CommandPalette from "@elite/ui/components/CommandPalette";
+import Logo from "@elite/ui/components/Logo";
+import ThemeToggle from "@elite/ui/components/ThemeToggle";
 
 export default function Layout({ config }: { config: SiteConfig }) {
   const headerRef = useRef<HTMLElement>(null);

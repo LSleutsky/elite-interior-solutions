@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: ../..
+      dockerfile: apps/elite-kitchens-bathrooms/Dockerfile
+    ports:
+      - "127.0.0.1:3004:3000"
+    environment:
+      - NODE_ENV=production
+    env_file:
+      - ../../.env
+    restart: unless-stopped

@@ -4,8 +4,17 @@
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./src/index.ts",
-    "./theme.css": "./src/styles/theme.css"
+    "./theme.css": "./src/styles/theme.css",
+    "./types": "./src/types.ts",
+    "./utils": "./src/utils/index.ts",
+    "./hooks/useTheme": "./src/hooks/useTheme.ts",
+    "./data/serviceAreas": "./src/data/serviceAreas.ts",
+    "./components/Layout": "./src/components/Layout.tsx",
+    "./components/ThemeToggle": "./src/components/ThemeToggle.tsx",
+    "./components/Logo": "./src/components/Logo.tsx",
+    "./components/CommandPalette": "./src/components/CommandPalette.tsx",
+    "./components/ServiceAreaMaps": "./src/components/ServiceAreaMaps.tsx",
+    "./components/ServiceAreasView": "./src/components/ServiceAreasView.tsx"
   },
   "scripts": {
     "typecheck": "tsc --noEmit -p tsconfig.json"

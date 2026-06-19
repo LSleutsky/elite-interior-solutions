@@ -11,7 +11,7 @@ import {
   Map
 } from "lucide-react";
 
-import { SiteConfig } from "@elite/ui";
+import { SiteConfig } from "@elite/ui/types";
 
 export const siteConfig: SiteConfig = {
   brandName: "Elite Basement Solutions",

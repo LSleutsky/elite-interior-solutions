@@ -5,9 +5,9 @@ import { createMeta } from "@/utils";
 
 export function meta() {
   return createMeta({
-    title: "Service Areas | Elite Basement Solutions",
+    title: "Service Areas | Elite Kitchens & Bathrooms",
     description:
-      "Elite Basement Solutions serves Southeastern Pennsylvania, New Jersey, and Northern Delaware. Find your town and zip code in our service area.",
+      "Elite Kitchens & Bathrooms serves Southeastern Pennsylvania and New Jersey. Find your town and zip code in our service area.",
     path: "service-areas"
   });
 }

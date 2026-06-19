@@ -1,4 +1,4 @@
-import { ArrowRight, Biohazard, Check, CloudRain, HousePlus, Library } from "lucide-react";
+import { ArrowRight, Bath, ChefHat, Check, Library } from "lucide-react";
 import { Link } from "react-router";
 
 import FullLogo from "@/components/FullLogo";
@@ -7,16 +7,11 @@ import { createMeta, getYearsOfExperience } from "@/utils";
 
 export function meta() {
   return createMeta({
-    title: "Elite Basement Solutions | Basement Waterproofing, Mold Remediation & Remodeling",
+    title: "Elite Kitchens & Bathrooms | Custom Kitchen & Bathroom Remodeling",
     description:
-      "Professional basement waterproofing, mold remediation, and basement remodeling services in PA and NJ. Licensed, insured, and backed by a lifetime warranty."
+      "Professional kitchen and bathroom remodeling services in PA and NJ. Licensed, insured, and backed by decades of craftsmanship."
   });
 }
-
-const services = [
-  { name: "Residential", description: "Protect your home", href: "/residential" },
-  { name: "Commercial", description: "Protect your business", href: "/commercial" }
-];
 
 const yearsOfExcellence = getYearsOfExperience();
 
@@ -25,22 +20,22 @@ export default function Home() {
     <div className="mx-auto max-w-6xl pb-24 md:pb-0">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <div className="bg-surface order-1 flex items-center justify-center rounded-2xl p-8 md:col-span-2 lg:col-span-1 lg:col-start-1 lg:row-span-3">
-          <FullLogo className="h-auto w-full max-w-[440px] md:max-w-[480px] lg:max-w-[400px]" />
+          <FullLogo className="h-auto w-full max-w-110 md:max-w-120 lg:max-w-100" />
         </div>
         <div className="bg-surface order-2 rounded-2xl p-6 md:col-span-2 md:p-8 lg:col-span-2 lg:col-start-2 lg:row-span-2">
           <p className="text-elite-teal mb-4 text-xs font-medium tracking-[0.2em] md:text-sm">
-            HOME IMPROVEMENT EXPERTS
+            KITCHEN & BATHROOM REMODELING
           </p>
           <div className="space-y-3 md:space-y-4">
             <h1 className="font-serif text-xl leading-tight sm:text-2xl md:text-4xl lg:text-5xl">
               <span className="text-primary">We make </span>
-              <span className="text-primary">basements </span>
-              <span className="text-elite-teal">beautiful.</span>
+              <span className="text-primary">kitchens </span>
+              <span className="text-elite-teal">stunning.</span>
             </h1>
             <h1 className="font-serif text-xl leading-tight sm:text-2xl md:text-4xl lg:text-5xl">
               <span className="text-primary">We make </span>
-              <span className="text-primary">homes </span>
-              <span className="text-elite-teal">healthy.</span>
+              <span className="text-primary">bathrooms </span>
+              <span className="text-elite-teal">serene.</span>
             </h1>
             <h1 className="font-serif text-xl leading-tight sm:text-2xl md:text-4xl lg:text-5xl">
               <span className="text-primary">We make </span>
@@ -64,25 +59,9 @@ export default function Home() {
           <span className="text-primary text-4xl font-medium">A+</span>
           <p className="text-elite-olive mt-1 text-sm">rating</p>
         </Link>
-        <div className="order-5 col-span-1 md:col-span-2 lg:col-span-3">
-          <div className="grid grid-cols-2 gap-4">
-            {services.map((service) => (
-              <Link
-                key={service.name}
-                className="bg-surface hover:bg-surface/80 flex flex-col items-center rounded-2xl px-4 py-4 transition-all hover:-translate-y-0.5 hover:shadow-lg"
-                to={service.href}
-              >
-                <span className="text-primary text-sm font-medium">{service.name}</span>
-                <span className="text-elite-teal mt-1 flex items-center justify-center text-xs">
-                  {service.description} <ArrowRight className="ml-0.5" size={14} />
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
         <div className="bg-elite-olive order-6 col-span-1 flex flex-col items-center justify-between gap-4 rounded-2xl p-5 md:col-span-2 md:flex-row lg:col-span-3">
           <p className="text-center text-sm font-medium text-white md:text-left md:text-base">
-            {`Protect what matters. Transform what's possible.`}
+            {`Designed for you. Built to last.`}
           </p>
           <Link
             className="rounded-full bg-white px-5 py-2 text-sm font-medium text-[#6d7a51] transition-opacity hover:opacity-90"
@@ -93,78 +72,59 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {/* Waterproofing */}
+        {/* Kitchens */}
         <div className="bg-surface group relative overflow-hidden rounded-2xl p-6 md:row-span-2 md:p-8">
           <div className="bg-elite-teal/10 absolute -top-12 -right-12 h-32 w-32 rounded-full blur-2xl transition-all group-hover:scale-150" />
           <div className="relative">
             <div className="bg-elite-teal/20 mb-4 inline-flex rounded-full p-3">
-              <CloudRain className="text-elite-olive" />
+              <ChefHat className="text-elite-olive" />
             </div>
-            <h3 className="text-primary mb-2 text-xl font-semibold">Waterproofing</h3>
+            <h3 className="text-primary mb-2 text-xl font-semibold">Kitchens</h3>
             <p className="text-muted mb-4 text-sm leading-relaxed md:text-base">
-              Stop leaks permanently with our proven basement waterproofing systems. Interior
-              drains, sump pumps, and wall encapsulation.
+              Reimagine the heart of your home with custom layouts, cabinetry, and finishes built
+              around how you cook and gather.
             </p>
             <ul className="text-muted mb-6 space-y-2 text-sm">
               <li className="flex items-center gap-2">
                 <Check className="text-elite-teal" size={16} />
-                Interior & Exterior Solutions
+                Custom Cabinetry & Storage
               </li>
               <li className="flex items-center gap-2">
                 <Check className="text-elite-teal" size={16} />
-                Precise Drainage Systems
+                Premium Countertops
               </li>
               <li className="flex items-center gap-2">
                 <Check className="text-elite-teal" size={16} />
-                Sump Pump Installations
+                Islands & Breakfast Bars
               </li>
               <li className="flex items-center gap-2">
                 <Check className="text-elite-teal" size={16} />
-                Lifetime Transferable Warranty
+                Tile & Hardwood Flooring
               </li>
             </ul>
             <Link
               className="text-elite-teal inline-flex items-center gap-1 text-sm font-medium"
-              to="/waterproofing"
+              to="/kitchens"
             >
               Learn more <ArrowRight size={16} />
             </Link>
           </div>
         </div>
-        {/* Mold Remediation */}
-        <div className="bg-surface group relative overflow-hidden rounded-2xl p-6">
+        {/* Bathrooms */}
+        <div className="bg-surface group relative overflow-hidden rounded-2xl p-6 md:col-span-1 lg:col-span-2">
           <div className="bg-elite-olive/10 absolute -top-8 -right-8 h-24 w-24 rounded-full blur-2xl transition-all group-hover:scale-150" />
           <div className="relative">
             <div className="bg-elite-teal/20 mb-4 inline-flex rounded-full p-3">
-              <Biohazard className="text-elite-olive" />
+              <Bath className="text-elite-olive" />
             </div>
-            <h3 className="text-primary mb-2 text-xl font-semibold">Mold Remediation</h3>
+            <h3 className="text-primary mb-2 text-xl font-semibold">Bathrooms</h3>
             <p className="text-muted mb-4 leading-relaxed">
-              {`Certified mold removal that protects your family's health. We eliminate mold at the source.`}
+              Turn your bathroom into a spa-like retreat with walk-in showers, soaking tubs, and
+              moisture-smart construction built to last.
             </p>
             <Link
               className="text-elite-teal inline-flex items-center gap-1 text-sm font-medium"
-              to="/mold-remediation"
-            >
-              Learn more <ArrowRight size={16} />
-            </Link>
-          </div>
-        </div>
-        {/* Basement Renovations */}
-        <div className="bg-surface group relative overflow-hidden rounded-2xl p-6">
-          <div className="bg-elite-teal/10 absolute -top-8 -right-8 h-24 w-24 rounded-full blur-2xl transition-all group-hover:scale-150" />
-          <div className="relative">
-            <div className="bg-elite-teal/20 mb-4 inline-flex rounded-full p-3">
-              <HousePlus className="text-elite-olive" />
-            </div>
-            <h3 className="text-primary mb-2 text-xl font-semibold">Basement Renovations</h3>
-            <p className="text-muted mb-4 leading-relaxed">
-              Transform your basement into a beautiful living space. Full renovations, custom
-              finishes.
-            </p>
-            <Link
-              className="text-elite-teal inline-flex items-center gap-1 text-sm font-medium"
-              to="/basement-renovations"
+              to="/bathrooms"
             >
               Learn more <ArrowRight size={16} />
             </Link>
@@ -174,7 +134,7 @@ export default function Home() {
         <div className="relative overflow-hidden rounded-2xl bg-[#0d0d0d] p-6 md:col-span-2 lg:col-span-2">
           <div className="flex flex-col items-center justify-center gap-4 py-4 text-center md:flex-row md:justify-between md:text-left">
             <div>
-              <p className="text-lg font-medium text-white md:text-xl">Need a custom solution?</p>
+              <p className="text-lg font-medium text-white md:text-xl">Need a custom remodel?</p>
               <p className="text-sm text-white/60">
                 {`Every home is unique. Let's discuss your project.`}
               </p>
@@ -201,7 +161,7 @@ export default function Home() {
               <h3 className="text-primary text-sm font-semibold sm:text-base">
                 Visit Our Learning Center
               </h3>
-              <p className="text-muted text-sm">FAQs, guides, and expert tips for home care</p>
+              <p className="text-muted text-sm">Guides and expert tips for your remodel</p>
             </div>
           </div>
           <span className="text-elite-teal flex items-center justify-center text-sm font-medium">

@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 
-import { EmailStrategy } from "../types";
+import { EmailStrategy } from "@elite/server/types";
 
 interface NodemailerOptions {
   from: string;

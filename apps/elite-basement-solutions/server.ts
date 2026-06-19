@@ -1,4 +1,5 @@
-import { createServer, resendEmail } from "@elite/server";
+import { createServer } from "@elite/server/createServer";
+import { resendEmail } from "@elite/server/email/resend";
 
 await createServer({
   imageKit: {

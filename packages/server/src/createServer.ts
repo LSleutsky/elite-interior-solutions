@@ -3,7 +3,7 @@ import express from "express";
 import morgan from "morgan";
 import path from "path";
 
-import { ContactPayload, ServerConfig } from "./types";
+import { ContactPayload, ServerConfig } from "@elite/server/types";
 
 const CACHE_TTL = 5 * 60 * 1000;
 

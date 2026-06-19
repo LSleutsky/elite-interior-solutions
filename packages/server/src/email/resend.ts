@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-import { EmailStrategy } from "../types";
+import { EmailStrategy } from "@elite/server/types";
 
 interface ResendOptions {
   from: string;

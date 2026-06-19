@@ -1,4 +1,4 @@
-import { SiteConfig } from "../types";
+import { SiteConfig } from "@elite/ui/types";
 
 export interface CreateMetaOptions {
   title: string;

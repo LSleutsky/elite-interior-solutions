@@ -24,10 +24,9 @@ import { createMeta } from "@/utils";
 
 export function meta() {
   return createMeta({
-    title: "About Us | Elite Basement Solutions",
+    title: "About Us | Elite Kitchens & Bathrooms",
     description:
-      // TODO add back `Northern Delaware` to description when delaware service launches
-      "Learn about Elite Basement Solutions - your trusted experts in basement waterproofing, mold remediation, and basement remodeling in Southeastern Pennsylvania and New Jersey.",
+      "Learn about Elite Kitchens & Bathrooms - your trusted experts in custom kitchen and bathroom remodeling in Southeastern Pennsylvania and New Jersey.",
     path: "about"
   });
 }
@@ -50,27 +49,6 @@ const serviceAreas: { area: string; map: JSX.Element; hash: string }[] = [
   //   hash: "delaware"
   // }
 ];
-
-// TODO(mold): re-enable when certifications and licenses section is restored
-// const certificationsLicenses = [
-//   { name: "EPA", href: "https://www.epa.gov" },
-//   { name: "OSHA", href: "https://www.osha.gov" },
-//   { name: "MICRO", href: "https://www.moldcareer.com/" },
-//   {
-//     name: "CMRC",
-//     href: "https://www.moldcareer.com/training-certification/4/5/195/MICRO-Certified-Mold-Remediation-Contractor-CMRC-Course/"
-//   },
-//   {
-//     name: "CMI",
-//     href: "https://indoorsciences.com/certifications/certified-microbial-investigator/"
-//   },
-//   {
-//     name: "CHST",
-//     href: "https://www.bcsp.org/construction-health-and-safety-technician-chst"
-//   },
-//   { name: "BHA", href: "https://basementhealth.org/industry/certifications/" },
-//   { name: "IAQ", href: "https://www.iaqa.org/" }
-// ];
 
 const ourPromises = [
   { name: "Licensed" },
@@ -106,12 +84,12 @@ export default function About() {
             OUR STORY
           </p>
           <h1 className="text-primary font-serif text-3xl leading-tight md:text-4xl lg:text-5xl">
-            Building trust, one basement at a time, one community at a time.
+            Building trust, one room at a time, one home at a time.
           </h1>
           <div className="bg-elite-teal/20 my-6 h-px w-24" />
           <p className="text-muted text-base leading-relaxed md:text-lg">
-            {`Founded in 1987, Elite Basement Solutions has grown from a small family operation to
-            Southeastern Pennsylvania and New Jersey's most trusted name in basement services. Our commitment to
+            {`Founded in 1987, Elite Kitchens & Bathrooms has grown from a small family operation to
+            Southeastern Pennsylvania and New Jersey's most trusted name in kitchen and bathroom remodeling. Our commitment to
             quality craftsmanship and honest service has earned us `}
             <em>thousands</em>
             {` of satisfied customers and a reputation that speaks for itself. Everyone `}
@@ -124,12 +102,9 @@ export default function About() {
           <span className="text-4xl font-semibold text-white md:text-5xl">2,500+</span>
           <p className="mt-2 text-sm text-white/80">Projects completed</p>
         </div>
-        <div className="order-3 overflow-hidden rounded-2xl">
-          <img
-            alt="Elite Basement Solutions team at work"
-            className="h-full w-full object-cover"
-            src="/elite-basement-worker.png"
-          />
+        {/* TODO: add an Elite Kitchens & Bathrooms team / project photo here */}
+        <div className="bg-map-bg order-3 flex min-h-50 items-center justify-center overflow-hidden rounded-2xl">
+          <span className="text-muted text-sm">Photo coming soon</span>
         </div>
       </div>
       <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -235,12 +210,9 @@ export default function About() {
         </div>
       </div>
       <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
-        <div className="overflow-hidden rounded-2xl md:row-span-2">
-          <img
-            alt="Quality craftsmanship example"
-            className="h-full w-full object-cover"
-            src="/elite-basement-quality.jpg"
-          />
+        {/* TODO: add a kitchen/bathroom craftsmanship photo here */}
+        <div className="bg-map-bg flex min-h-60 items-center justify-center overflow-hidden rounded-2xl md:row-span-2">
+          <span className="text-muted text-sm">Photo coming soon</span>
         </div>
         <div className="bg-surface rounded-2xl p-6">
           <p className="text-elite-teal mb-2 text-xs font-medium tracking-[0.2em]">WHY CHOOSE US</p>
@@ -248,15 +220,15 @@ export default function About() {
           <ul className="text-muted space-y-3 text-sm">
             <li className="flex items-start gap-2">
               <Check className="text-elite-teal" size={22} />
-              <span>Lifetime transferable warranty on all waterproofing</span>
+              <span>Workmanship warranty on every remodel</span>
             </li>
             <li className="flex items-start gap-2">
               <Check className="text-elite-teal" size={22} />
-              <span>Free, no-obligation inspections and estimates</span>
+              <span>Free, no-obligation design consultations and estimates</span>
             </li>
             <li className="flex items-start gap-2">
               <Check className="text-elite-teal" size={22} />
-              <span>Same-day emergency response available</span>
+              <span>Clean, respectful, on-schedule job sites</span>
             </li>
             <li className="flex items-start gap-2">
               <Check className="text-elite-teal" size={22} />
@@ -280,10 +252,9 @@ export default function About() {
             <h3 className="text-primary text-lg font-semibold">Professional Equipment</h3>
           </div>
           <p className="text-muted text-sm leading-relaxed">
-            {`We invest in the latest industry equipment and technology to ensure every job is done
-            right the first time. From advanced moisture and mold detection, to commercial-grade
-            waterproofing systems, you'll never need to worry about knock-offs masquerading as
-            brand names.`}
+            {`We invest in premium materials, precise tools, and proven techniques to ensure every
+            job is done right the first time. From custom cabinetry to tile and fixtures, you'll
+            never need to worry about knock-offs masquerading as brand names.`}
           </p>
         </div>
       </div>
@@ -299,7 +270,7 @@ export default function About() {
             <div>
               <h3 className="text-primary font-semibold">Knowledge Base & Resources</h3>
               <p className="text-muted text-sm">
-                Learn about waterproofing, mold prevention, and proper home care
+                Learn about kitchen and bathroom design, materials, and remodel planning
               </p>
             </div>
           </div>

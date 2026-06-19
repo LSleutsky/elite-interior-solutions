@@ -1,12 +1,12 @@
 {
-  "name": "@elite/basement-solutions",
-  "description": "Elite Basement Solutions",
+  "name": "@elite/kitchens-bathrooms",
+  "description": "Elite Kitchens & Bathrooms",
   "author": "Lush Sleutsky <lush.sleutsky@gmail.com>",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development node --import tsx --env-file-if-exists=../../.env server.ts",
+    "dev": "cross-env NODE_ENV=development PORT=3001 node --import tsx --env-file-if-exists=../../.env server.ts",
     "build": "react-router build",
     "start": "tsx server.ts",
     "typecheck": "react-router typegen && tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.node.json"

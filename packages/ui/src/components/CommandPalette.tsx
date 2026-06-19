@@ -2,7 +2,7 @@ import { Command, Search, X } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router";
 
-import { CommandPalettePage } from "../types";
+import { CommandPalettePage } from "@elite/ui/types";
 
 export default function CommandPalette({ pages }: { pages: CommandPalettePage[] }) {
   const navigate = useNavigate();
