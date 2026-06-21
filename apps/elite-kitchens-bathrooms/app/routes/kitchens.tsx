@@ -76,8 +76,12 @@ export default function Kitchens() {
       </header>
       {/* Designed Around How You Live */}
       <section className="mb-4 grid grid-cols-1 gap-4 lg:grid-cols-3">
-        <div className="bg-map-bg order-2 flex items-center justify-center overflow-hidden rounded-2xl lg:order-0 lg:col-start-1 lg:row-start-1">
-          <span className="text-muted text-sm">Photo coming soon</span>
+        <div className="bg-surface order-2 overflow-hidden rounded-2xl lg:order-0 lg:col-start-1 lg:row-start-1">
+          <img
+            alt="Custom kitchen designed around how you live"
+            className="h-full w-full object-cover"
+            src="/elite-kitchens.jpg"
+          />
         </div>
         <div className="bg-surface order-1 rounded-2xl p-6 md:p-8 lg:order-0 lg:col-span-2">
           <div className="bg-elite-teal/20 mb-4 inline-flex rounded-full p-3">
@@ -220,8 +224,12 @@ export default function Kitchens() {
       </section>
       {/* Lighting & Finishes */}
       <section className="mb-4 grid grid-cols-1 gap-4 lg:grid-cols-3">
-        <div className="bg-map-bg order-2 flex items-center justify-center overflow-hidden rounded-2xl lg:order-0 lg:col-start-1 lg:row-start-1">
-          <span className="text-muted text-sm">Photo coming soon</span>
+        <div className="bg-surface order-2 overflow-hidden rounded-2xl lg:order-0 lg:col-start-1 lg:row-start-1">
+          <img
+            alt="Layered kitchen lighting and finishes"
+            className="h-full w-full object-cover"
+            src="/elite-kitchens-1.jpg"
+          />
         </div>
         <div className="bg-surface order-1 rounded-2xl p-6 md:p-8 lg:order-0 lg:col-span-2">
           <div className="bg-elite-teal/20 mb-4 inline-flex rounded-full p-3">
@@ -264,8 +272,12 @@ export default function Kitchens() {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4 lg:row-span-2 lg:grid-cols-1 lg:grid-rows-2">
-          <div className="bg-map-bg flex items-center justify-center overflow-hidden rounded-2xl">
-            <span className="text-muted text-sm">Photo coming soon</span>
+          <div className="overflow-hidden rounded-2xl">
+            <img
+              alt="Kitchen materials and craftsmanship detail"
+              className="h-full w-full object-cover"
+              src="/elite-kitchens-2.jpg"
+            />
           </div>
           <div className="bg-surface flex items-center justify-center rounded-2xl p-6">
             <div className="flex items-center gap-3">

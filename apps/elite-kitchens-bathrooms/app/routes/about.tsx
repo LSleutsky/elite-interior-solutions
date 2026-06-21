@@ -25,6 +25,10 @@ export default function About() {
     <AboutView
       equipmentText={`We invest in premium materials, precise tools, and proven techniques to ensure every job is done right the first time. From custom cabinetry to tile and fixtures, you'll never need to worry about knock-offs masquerading as brand names.`}
       headline="Building trust, one room at a time, one home at a time."
+      qualityPhoto={{
+        src: "/elite-kitchen-quality.jpeg",
+        alt: "Quality kitchens"
+      }}
       resourcesSubtitle="Learn about kitchen and bathroom design, materials, and remodel planning"
       story={
         <>
@@ -38,6 +42,10 @@ export default function About() {
           is the only equalizer that matters.`}
         </>
       }
+      teamPhoto={{
+        src: "/elite-kitchen-worker.jpg",
+        alt: "Elite Basement Solutions team at work"
+      }}
       whyChooseUs={whyChooseUs}
     />
   );

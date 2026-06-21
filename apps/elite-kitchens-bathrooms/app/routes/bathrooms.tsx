@@ -74,8 +74,12 @@ export default function Bathrooms() {
       </header>
       {/* Built for Everyday Luxury */}
       <section className="mb-4 grid grid-cols-1 gap-4 lg:grid-cols-3">
-        <div className="bg-map-bg order-2 flex items-center justify-center overflow-hidden rounded-2xl lg:order-0 lg:col-start-1 lg:row-start-1">
-          <span className="text-muted text-sm">Photo coming soon</span>
+        <div className="bg-surface order-2 overflow-hidden rounded-2xl lg:order-0 lg:col-start-1 lg:row-start-1">
+          <img
+            alt="Bathroom built for everyday luxury"
+            className="h-full w-full object-cover"
+            src="/elite-bathrooms.jpg"
+          />
         </div>
         <div className="bg-surface order-1 rounded-2xl p-6 md:p-8 lg:order-0 lg:col-span-2">
           <div className="bg-elite-olive/20 mb-4 inline-flex rounded-full p-3">
@@ -207,8 +211,12 @@ export default function Bathrooms() {
       </section>
       {/* Showers, Tubs & Vanities */}
       <section className="mb-4 grid grid-cols-1 gap-4 lg:grid-cols-3">
-        <div className="bg-map-bg order-2 flex items-center justify-center overflow-hidden rounded-2xl lg:order-0 lg:col-start-1 lg:row-start-1">
-          <span className="text-muted text-sm">Photo coming soon</span>
+        <div className="bg-surface order-2 overflow-hidden rounded-2xl lg:order-0 lg:col-start-1 lg:row-start-1">
+          <img
+            alt="Custom shower, tub, and vanity"
+            className="h-full w-full object-cover"
+            src="/elite-bathrooms-1.jpg"
+          />
         </div>
         <div className="bg-surface order-1 rounded-2xl p-6 md:p-8 lg:order-0 lg:col-span-2">
           <div className="bg-elite-teal/20 mb-4 inline-flex rounded-full p-3">
@@ -251,8 +259,12 @@ export default function Bathrooms() {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4 lg:row-span-2 lg:grid-cols-1 lg:grid-rows-2">
-          <div className="bg-map-bg flex items-center justify-center overflow-hidden rounded-2xl">
-            <span className="text-muted text-sm">Photo coming soon</span>
+          <div className="relative aspect-[3/2] overflow-hidden rounded-2xl lg:aspect-auto lg:min-h-0">
+            <img
+              alt="Bathroom finishes and fixtures detail"
+              className="absolute inset-0 h-full w-full object-cover"
+              src="/elite-bathrooms-2.jpg"
+            />
           </div>
           <div className="bg-surface flex items-center justify-center rounded-2xl p-6">
             <div className="flex items-center gap-3">
@@ -292,7 +304,7 @@ export default function Bathrooms() {
           <div className="bg-elite-teal/20 mb-4 inline-flex rounded-full p-3">
             <Droplets className="text-elite-teal h-6 w-6" />
           </div>
-          <h3 className="text-primary mb-2 text-lg font-semibold">Done-Right Waterproofing</h3>
+          <h3 className="text-primary mb-2 text-lg font-semibold">Waterproof & Seal</h3>
           <p className="text-muted text-sm">
             The work behind the tile is what makes a bathroom last. We seal it properly so moisture
             never becomes a problem.
