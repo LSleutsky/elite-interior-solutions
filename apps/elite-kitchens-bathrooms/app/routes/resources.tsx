@@ -17,9 +17,9 @@ import { createMeta } from "@/utils";
 
 export function meta() {
   return createMeta({
-    title: "Knowledge Base & Resources | Elite Kitchens & Bathrooms",
+    title: "Knowledge Base & Resources | Elite Interior Renewals",
     description:
-      "Learn about kitchen and bathroom remodeling: design, materials, fixtures, and planning. Expert knowledge and FAQs from Elite Kitchens & Bathrooms.",
+      "Learn about kitchen and bathroom remodeling: design, materials, fixtures, and planning. Expert knowledge and FAQs from Elite Interior Renewals.",
     path: "resources"
   });
 }

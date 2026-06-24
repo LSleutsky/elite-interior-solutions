@@ -13,8 +13,8 @@ import {
 import { SiteConfig } from "@elite/ui/types";
 
 export const siteConfig: SiteConfig = {
-  brandName: "Elite Kitchens & Bathrooms",
-  baseUrl: "https://elitekitchensbathrooms.com",
+  brandName: "Elite Interior Renewals",
+  baseUrl: "https://eliteinteriorrenewals.com",
   defaultOgImage: "/elite-kitchens-bathrooms-logo.png",
   phone: "(800) 902-5311",
   phoneHref: "18009025311",

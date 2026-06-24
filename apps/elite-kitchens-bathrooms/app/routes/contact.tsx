@@ -5,9 +5,9 @@ import { createMeta } from "@/utils";
 
 export function meta() {
   return createMeta({
-    title: "Contact Us | Elite Kitchens & Bathrooms",
+    title: "Contact Us | Elite Interior Renewals",
     description:
-      "Get a free estimate for custom kitchen and bathroom remodeling in PA and NJ. Contact Elite Kitchens & Bathrooms today.",
+      "Get a free estimate for custom kitchen and bathroom remodeling in PA and NJ. Contact Elite Interior Renewals today.",
     path: "contact"
   });
 }

@@ -29,7 +29,7 @@ common UI, theme, and server layer.
 pnpm install
 
 pnpm basements   # Elite Basement Solutions  -> http://localhost:3000
-pnpm kitchens    # Elite Kitchens & Bathrooms -> http://localhost:3001
+pnpm kitchens    # Elite Interior Renewals -> http://localhost:3001
 ```
 
 Both can run concurrently. Local environment variables are read from the workspace-root `.env`.

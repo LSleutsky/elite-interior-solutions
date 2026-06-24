@@ -9,7 +9,7 @@ import { createMeta } from "@/utils";
 
 export function meta() {
   return createMeta({
-    title: "Project Gallery | Elite Kitchens & Bathrooms",
+    title: "Project Gallery | Elite Interior Renewals",
     description:
       "Browse our project gallery showcasing custom kitchen and bathroom remodeling work throughout Southeastern Pennsylvania and New Jersey.",
     path: "projects"

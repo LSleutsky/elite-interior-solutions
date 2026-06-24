@@ -13,7 +13,7 @@ await createServer({
     other: "Other"
   },
   email: nodemailerEmail({
-    from: `Elite Kitchens & Bathrooms <${process.env.SMTP_USER}>`,
+    from: `Elite Interior Renewals <${process.env.SMTP_USER}>`,
     to: ["joe@elitekitchensbathrooms.com"]
   })
 });

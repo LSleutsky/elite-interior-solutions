@@ -8,7 +8,7 @@ import { createMeta } from "@/utils";
 
 export function meta() {
   return createMeta({
-    title: "Elite Kitchens & Bathrooms | Custom Kitchen & Bathroom Remodeling",
+    title: "Elite Interior Renewals | Custom Kitchen & Bathroom Remodeling",
     description:
       "Professional kitchen and bathroom remodeling services in PA and NJ. Licensed, insured, and backed by decades of craftsmanship."
   });

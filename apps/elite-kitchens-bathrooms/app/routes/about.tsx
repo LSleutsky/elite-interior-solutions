@@ -4,9 +4,9 @@ import { createMeta } from "@/utils";
 
 export function meta() {
   return createMeta({
-    title: "About Us | Elite Kitchens & Bathrooms",
+    title: "About Us | Elite Interior Renewals",
     description:
-      "Learn about Elite Kitchens & Bathrooms - your trusted experts in custom kitchen and bathroom remodeling in Southeastern Pennsylvania and New Jersey.",
+      "Learn about Elite Interior Renewals - your trusted experts in custom kitchen and bathroom remodeling in Southeastern Pennsylvania and New Jersey.",
     path: "about"
   });
 }
@@ -32,7 +32,7 @@ export default function About() {
       resourcesSubtitle="Learn about kitchen and bathroom design, materials, and remodel planning"
       story={
         <>
-          {`Founded in 1987, Elite Kitchens & Bathrooms has grown from a small family operation to
+          {`Founded in 1987, Elite Interior Renewals has grown from a small family operation to
           Southeastern Pennsylvania and New Jersey's most trusted name in kitchen and bathroom remodeling. Our commitment to
           quality craftsmanship and honest service has earned us `}
           <em>thousands</em>

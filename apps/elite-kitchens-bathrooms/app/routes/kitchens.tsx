@@ -19,7 +19,7 @@ import { createMeta } from "@/utils";
 
 export function meta() {
   return createMeta({
-    title: "Kitchen Remodeling | Elite Kitchens & Bathrooms",
+    title: "Kitchen Remodeling | Elite Interior Renewals",
     description:
       "Custom kitchen remodeling in PA and NJ. Cabinetry, countertops, islands, flooring, and lighting designed around how you live.",
     path: "kitchens"

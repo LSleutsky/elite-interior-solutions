@@ -5,9 +5,9 @@ import { createMeta } from "@/utils";
 
 export function meta() {
   return createMeta({
-    title: "Service Areas | Elite Kitchens & Bathrooms",
+    title: "Service Areas | Elite Interior Renewals",
     description:
-      "Elite Kitchens & Bathrooms serves Southeastern Pennsylvania and New Jersey. Find your town and zip code in our service area.",
+      "Elite Interior Renewals serves Southeastern Pennsylvania and New Jersey. Find your town and zip code in our service area.",
     path: "service-areas"
   });
 }
